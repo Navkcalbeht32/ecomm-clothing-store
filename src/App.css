@@ -5,6 +5,8 @@ body {
   padding: 20px 60px;
 }
 
+/* Custom Button Styling */
+
 .btn {
   width: auto;
   height: 40px;
@@ -14,6 +16,11 @@ body {
   cursor: pointer;
   transition: ease-in-out 0.2s;
   border: 3px solid transparent;
+  text-transform: uppercase;
+}
+
+.btn:focus { 
+  outline: none; 
 }
 
 .btn-light {
@@ -26,6 +33,19 @@ body {
   background-color: #dadada;
   color: #000;
   border: 3px solid #dadada;
+}
+
+.btn-blue {
+  background-color: #1563d6;
+  color: #fff;
+  border: 3px solid #1563d6;
+  margin-left: 20px;
+}
+
+.btn-blue:hover {
+  background-color: #6ca4f8;
+  color: #fff;
+  border: 3px solid #6ca4f8;
 }
 
 .btn-dark {

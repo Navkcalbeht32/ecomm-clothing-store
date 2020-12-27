@@ -4,6 +4,8 @@ import './sign-in.styles.scss';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 import '../custom-button/custom-button.styles.scss';
+// import { ReactComponent as GoogleLogo } from '../../assets/google-logo.svg'
+import { signInWithGoogle } from '../../firebase/firebase.utils'
 
 
 class SignIn extends React.Component {
@@ -50,7 +52,11 @@ class SignIn extends React.Component {
                         handleChange={this.handleChange}
                         required />
     
-                    <CustomButton className="btn btn-light">Sign In</CustomButton>
+                    <CustomButton className="btn btn-light" type="submit" >Sign In</CustomButton>
+                    <CustomButton className="btn btn-blue" onClick={signInWithGoogle} >Sign in with Google 
+                    </CustomButton>
+                    
+
                 </form>
             </div>
         )

@@ -19,7 +19,7 @@ const Header = () => (
         <CustomButton className="btn btn-dark">Contact</CustomButton>
       </Link>
       <Link className='option' to='/signin'>
-        <CustomButton className="btn btn-light">Contact</CustomButton>
+        <CustomButton className="btn btn-light">Sign In</CustomButton>
       </Link>
     </div>
   </div>
