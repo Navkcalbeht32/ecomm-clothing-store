@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { ReactComponent as Logo } from '../../assets/logo.svg';
-
+import { ReactComponent as Logo } from '../../assets/logo2.svg';
 import './header.styles.scss';
+import '../../App.css'
 
 const Header = () => (
   <div className='header'>
@@ -12,10 +11,14 @@ const Header = () => (
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
-        SHOP
+      <button className="btn">
+            SHOP
+        </button>
       </Link>
-      <Link className='option' to='/shop'>
-        CONTACT
+      <Link className='option' to='/contact'>
+        <button className="btn">
+            CONTACT
+        </button>
       </Link>
     </div>
   </div>
