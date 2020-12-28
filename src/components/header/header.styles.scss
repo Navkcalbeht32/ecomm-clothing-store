@@ -15,9 +15,35 @@
     .logo{
         margin: auto;
     }
+
+    .nav-box {
+      height: 40px;
+      display: flex;
+      position: relative;
+
+      h4 {
+        padding: 10px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 100;
+        margin: 0;
+      }
+
+      h4:hover {
+        text-decoration: underline;
+      }
+
+      .nav-icon {
+        height: 25px;
+        width: 25px;
+        margin: 6px 0;
+      }
+    }
+
+    
   
     .options {
-      width: 50%;
+      width: 70%;
       height: 100%;
       display: flex;
       align-items: center;
@@ -25,6 +51,9 @@
   
       .option {
         padding: 10px 15px;
+        color: #000;
+        text-decoration: none;
+        font-weight: 100;
       }
     }
   }
